@@ -15,6 +15,16 @@ class drop {
        // this.image = loadImage("paper.png");
        // this.body = height;
         World.add(world,this.body);
+      } 
+
+      updateY (){
+       if(this.body.position.y>height){
+         Matter.Body.setPosition (this.body,{
+           x:random(0,400),
+           y:random(0,400)
+         })
+           } 
+           
       }
       display(){ 
 
